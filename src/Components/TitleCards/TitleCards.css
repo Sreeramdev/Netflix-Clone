@@ -44,3 +44,32 @@
     padding-left: 6%;
 }
 
+@media (max-width:800px) {
+    .title-Cards{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .title-Cards h2{
+        font-size: 18px;
+    }
+    .card-list img{
+       width: 200px;
+    }
+    .card-list p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:500px) {
+    
+    
+    .title-Cards h2{
+        font-size: 14px;
+    }
+    .card-list img{
+       width: 165px;
+    }
+    .card-list p{
+        font-size: 10px;
+    }
+}
