@@ -1,24 +1,20 @@
-# .woodpecker.yml
 ---
-# Trigger on pushes to main branch
 when:
   - event: push
     branch: main
 
 steps:
-  # First step: print hello
   - name: hello-world
     image: alpine:latest
     commands:
-      - echo "🎉 Hello from Woodpecker CI!"
-      - echo "Branch: ${CI_COMMIT_BRANCH}"
-      - echo "Commit: ${CI_COMMIT_SHA}"
+      - 'echo "🎉 Hello from Woodpecker CI!"'
+      - 'echo "Branch: ${CI_COMMIT_BRANCH}"'
+      - 'echo "Commit: ${CI_COMMIT_SHA}"'
 
-  # Second step: print system info
   - name: system-info
     image: alpine:latest
     commands:
-      - echo "=== System Information ==="
-      - uname -a
-      - cat /etc/os-release
-      - df -h
+      - 'echo "=== System Information ==="'
+      - 'uname -a'
+      - 'cat /etc/os-release'
+      - 'df -h'
